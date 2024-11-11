@@ -1,0 +1,54 @@
+Overview
+This project involves building a machine learning model to predict customer churn using a dataset of customer information. The goal is to identify customers who are likely to churn (i.e., leave the service) based on various features such as demographics, account information, and service usage. The project follows a structured pipeline, from data preprocessing to model building and evaluation, to deliver a reliable and actionable churn prediction model.
+
+Data Source
+The dataset used in this project was obtained from Kaggle, and contains customer demographics, account details, and information about whether the customer has churned (Exited column).
+
+Data Description
+RowNumber: Identifier for each row.
+CustomerId: Unique identifier for every customer.
+Surname: Customer's surname (not relevant for modeling).
+CreditScore: Credit score of the customer.
+Geography: Country of residence of the customer (categorical feature).
+Gender: Gender of the customer (categorical feature).
+Age: Age of the customer.
+Tenure: The number of years the customer has been with the service.
+Balance: Account balance.
+EstimatedSalary: The estimated salary of the customer.
+Exited: Target variable (1 indicates churn, 0 indicates no churn).
+Project Structure
+The project follows a structured pipeline consisting of the following steps:
+
+Data Import and Exploration: Importing and inspecting the dataset to check its structure, data types, and any missing values.
+Exploratory Data Analysis (EDA): Analyzing the data using summary statistics and visualizations to understand customer churn patterns.
+Data Cleaning: Handling missing values and outliers for cleaner, more reliable data.
+Feature Engineering and Encoding: Creating new features if necessary and encoding categorical variables for model compatibility.
+Feature Scaling: Normalizing or standardizing features to ensure optimal model performance.
+Model Building and Evaluation: Building and evaluating several predictive models (Logistic Regression, Random Forest, Gradient Boosting) for customer churn. Models are tuned for optimal performance.
+Model Performance
+Tuned Logistic Regression
+Accuracy: 0.79
+Precision: 0.62
+Recall: 0.51
+F1 Score: 0.56
+AUC-ROC: 0.83
+Tuned Random Forest
+Accuracy: 0.79
+Precision: 0.64
+Recall: 0.48
+F1 Score: 0.55
+AUC-ROC: 0.83
+Tuned Gradient Boosting
+Accuracy: 0.79
+Precision: 0.63
+Recall: 0.50
+F1 Score: 0.56
+AUC-ROC: 0.83
+Requirements
+The following Python libraries are required to run this project:
+
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
